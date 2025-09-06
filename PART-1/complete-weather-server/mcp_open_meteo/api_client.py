@@ -10,7 +10,7 @@ from typing import Any, Dict, Optional, List
 from .config import GEOCODING_API_URL, WEATHER_API_URL, MAX_LOCATION_SEARCH_RESULTS
 
 
-async def search_location(location_name: str, limit: int = 10) -> List[Dict[str, Any]]:
+async def search_locations(location_name: str, limit: int = 10) -> List[Dict[str, Any]]:
     """Search for locations using the geocoding API"""
     params = {
         "name": location_name,
